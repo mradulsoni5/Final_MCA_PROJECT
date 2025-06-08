@@ -1,0 +1,168 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/background_4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+    
+    
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: url('../images/background_11.jpeg')center center ;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.heading-box {
+    background:url('../images/background_17.jpg')center center ;
+    background-size: cover;
+    border: 1px solid #064c7b;
+    border-radius: 12px;
+    padding: 15px 25px;
+    margin: 0 auto 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.heading-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-section {
+    margin-bottom: 25px;
+}
+
+
+
+h2 {
+    color:whitesmoke;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+  
+}
+
+.symptom-category {
+    margin-bottom: 20px;
+    background-color: #c9ced4d3;
+    padding: 15px;
+    border-radius: 8px;
+    
+}
+
+.category-title {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category-title::before {
+    content: "▶";
+    margin-right: 8px;
+    font-size: 0.8em;
+    transition: transform 0.3s;
+}
+
+.category-title.collapsed::before {
+    transform: rotate(90deg);
+}
+
+.option-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.option-btn {
+    padding: 8px 15px;
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.option-btn:hover {
+    background-color: #d6eaf8;
+    border-color: #3498db;
+}
+
+.option-btn.selected {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.age-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 33px;
+}
+
+.age-input {
+    padding: 10px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    width: 132px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #27ae60;
+}
+
+.results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1eaecb;
+    border-radius: 5px;
+    display: none;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+#symptomSearch {
+    width: 97%;
+    padding: 10px;
+    border: 2px solid #061b19;
+    border-radius: 5px;
+    font-size: 16px;
+}

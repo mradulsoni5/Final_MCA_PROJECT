@@ -1,0 +1,12 @@
+Disease,Medication
+Arthritis,"['Vestibular rehabilitation', 'Canalith repositioning', 'Medications for nausea', 'Surgery', 'Home exercises']"
+Common Cold,"['Antibiotics', 'Antiviral drugs', 'Antifungal drugs', 'IV fluids', 'Oxygen therapy']"
+Dengue,"['Antibiotics', 'Antipyretics', 'Analgesics', 'IV fluids', 'Corticosteroids']"
+Heart attack,"['Compression stockings', 'Exercise', 'Elevating the legs', 'Sclerotherapy', 'Laser treatments']"
+Malaria,"['Antimalarial drugs', 'Antipyretics', 'Antiemetic drugs', 'IV fluids', 'Blood transfusions']"
+Migraine,"['Analgesics', 'Triptans', 'Ergotamine derivatives', 'Preventive medications', 'Biofeedback']"
+Eczema,"['Topical corticosteroids', 'Moisturizers', 'Antihistamines', 'Calcineurin inhibitors', 'Phototherapy']"
+Heat Stroke,"['IV fluids', 'Cooling blankets', 'Oral rehydration', 'Antipyretics', 'Electrolyte replacement']"
+Influenza,"['Antiviral drugs', 'Analgesics', 'Antipyretics', 'Rest', 'Hydration']"
+Sinusitis,"['Nasal corticosteroids', 'Decongestants', 'Antibiotics', 'Saline nasal irrigation', 'Pain relievers']"
+Stroke,"['Thrombolytics', 'Anticoagulants', 'Antiplatelet drugs', 'Blood pressure medications', 'Statins']"

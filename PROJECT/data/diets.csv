@@ -1,0 +1,12 @@
+Disease,Diet
+Arthritis,"['Arthritis Diet', 'Anti-Inflammatory Diet', 'Omega-3-rich foods', 'Fruits and vegetables', 'Whole grains']"
+Common Cold,"['Cold Diet', 'Hydration', 'Warm fluids', 'Rest', 'Honey and lemon tea']"
+Dengue,"['Dengue Diet', 'Hydration', 'High-Calorie Diet', 'Soft and bland foods', 'Protein-rich foods']"
+Eczema,"['Anti-Inflammatory Diet', 'Omega-3-rich foods', 'Probiotics', 'Hydration', 'Vitamin E-rich foods']"
+Heart attack,"['Heart-Healthy Diet', 'Low-sodium foods', 'Fruits and vegetables', 'Whole grains', 'Lean proteins']"
+Heat Stroke,"['Hydration Diet', 'Electrolyte-rich drinks', 'Light foods', 'Fruits and vegetables', 'Low-sodium foods']"
+Influenza,"['Flu Diet', 'Hydration', 'Warm fluids', 'Vitamin C-rich foods', 'Zinc-rich foods']"
+Malaria,"['Malaria Diet', 'Hydration', 'High-Calorie Diet', 'Soft and bland foods', 'Oral rehydration solutions']"
+Migraine,"['Migraine Diet', 'Low-Tyramine Diet', 'Caffeine withdrawal', 'Hydration', 'Magnesium-rich foods']"
+Sinusitis,"['Anti-Inflammatory Diet', 'Hydration', 'Warm fluids', 'Vitamin C-rich foods', 'Probiotics']"
+Stroke,"['Heart-Healthy Diet', 'Low-sodium foods', 'Omega-3-rich foods', 'Fruits and vegetables', 'Whole grains']"

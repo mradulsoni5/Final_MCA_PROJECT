@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Symptom Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="heading-box">
+        <h1><font color="white" face="Arial" size="6.5px" >PREDICTION SYSTEM</font></h1>
+        </div>
+        <form id="symptomForm">
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                <font size="4px" color="white" ><b>Gender</b></font>
+                <br>
+                
+                <div class="option-group" id="genderGroup">
+                    <button type="button" class="option-btn" data-value="1">Male</button>
+                    <button type="button" class="option-btn" data-value="0">Female</button>
+                    <button type="button" class="option-btn" data-value="2">Other</button>
+                </div>
+            
+                <div class="age-group">
+                    <label for="ageInput"><font color="white"><b>Age:</b></font></label>
+                    <input type="number" id="ageInput" class="age-input" min="1" max="120" placeholder="Enter Your age">
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Symptoms</h2>
+                <div class="search-box">
+                    <input type="text" id="symptomSearch" placeholder="Search your symptoms...">
+                </div>
+                
+                <!-- General Symptoms -->
+                <div class="symptom-category">
+                    <div class="category-title">General Symptoms</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="fever">Fever</button>
+                        <button type="button" class="option-btn" data-value="high_fever">High Fever</button>
+                        <button type="button" class="option-btn" data-value="chills">Chills</button>
+                        <button type="button" class="option-btn" data-value="fatigue">Fatigue</button>
+                        <button type="button" class="option-btn" data-value="weakness">Weakness</button>
+                        <button type="button" class="option-btn" data-value="shivering">Shivering</button>
+                        <button type="button" class="option-btn" data-value="body_aches">Body Aches</button>
+                    </div>
+                </div>
+                
+                <!-- Respiratory Symptoms -->
+                <div class="symptom-category">
+                    <div class="category-title">Respiratory Symptoms</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="cough">Cough</button>
+                        <button type="button" class="option-btn" data-value="shortness_of_breath">Shortness of Breath</button>
+                        <button type="button" class="option-btn" data-value="rapid_breathing">Rapid Breathing</button>
+                        <button type="button" class="option-btn" data-value="runny_nose">Runny Nose</button>
+                        <button type="button" class="option-btn" data-value="sneezing">Sneezing</button>
+                        <button type="button" class="option-btn" data-value="asthma">Asthma</button>
+                    </div>
+                </div>
+                
+                <!-- Head and Neurological Symptoms -->
+                <div class="symptom-category">
+                    <div class="category-title">Head/Neurological</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="headache">Headache</button>
+                        <button type="button" class="option-btn" data-value="severe_headache">Severe Headache</button>
+                        <button type="button" class="option-btn" data-value="throbbing_headache">Throbbing Headache</button>
+                        <button type="button" class="option-btn" data-value="sinus_headache">Sinus Headache</button>
+                        <button type="button" class="option-btn" data-value="dizziness">Dizziness</button>
+                        <button type="button" class="option-btn" data-value="confusion">Confusion</button>
+                        <button type="button" class="option-btn" data-value="trouble_seeing">Trouble Seeing</button>
+                    </div>
+                </div>
+                
+                <!-- Eye Symptoms -->
+                <div class="symptom-category">
+                    <div class="category-title">Eye Symptoms</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="pain_behind_the_eyes">Pain Behind Eyes</button>
+                    </div>
+                </div>
+                
+                <!-- Gastrointestinal Symptoms -->
+                <div class="symptom-category">
+                    <div class="category-title">Gastrointestinal</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="nausea">Nausea</button>
+                        <button type="button" class="option-btn" data-value="vomiting">Vomiting</button>
+                        <button type="button" class="option-btn" data-value="abdominal_pain">Abdominal Pain</button>
+                        <button type="button" class="option-btn" data-value="diarrhea">Diarrhea</button>
+                        <button type="button" class="option-btn" data-value="sore_throat">Sore Throat</button>
+                    </div>
+                </div>
+                
+                <!-- Pain Symptoms -->
+                <div class="symptom-category">
+                    <div class="category-title">Pain Symptoms</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="chest_pain">Chest Pain</button>
+                        <button type="button" class="option-btn" data-value="joint_pain">Joint Pain</button>
+                        <button type="button" class="option-btn" data-value="back_pain">Back Pain</button>
+                        <button type="button" class="option-btn" data-value="knee_ache">Knee Ache</button>
+                        <button type="button" class="option-btn" data-value="facial_pain">Facial Pain</button>
+                    </div>
+                </div>
+                
+                <!-- Skin Symptoms -->
+                <div class="symptom-category">
+                    <div class="category-title">Skin Symptoms</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="rashes">Rashes</button>
+                        <button type="button" class="option-btn" data-value="skin_irritation">Skin Irritation</button>
+                        <button type="button" class="option-btn" data-value="itchiness">Itchiness</button>
+                        <button type="button" class="option-btn" data-value="swollen_glands">Swollen Glands</button>
+                    </div>
+                </div>
+                
+                <!-- Sensory Symptoms -->
+                <div class="symptom-category">
+                    <div class="category-title">Sensory Symptoms</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="reduced_smell_and_taste">Reduced Smell/Taste</button>
+                    </div>
+                </div>
+                
+                <!-- Cardiovascular Symptoms -->
+                <div class="symptom-category">
+                    <div class="category-title">Cardiovascular</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="rapid_heart_rate">Rapid Heart Rate</button>
+                        <button type="button" class="option-btn" data-value="high_blood_pressure">High Blood Pressure</button>
+                    </div>
+                </div>
+                
+                <!-- Medical History -->
+                <div class="symptom-category">
+                    <div class="category-title">Medical History</div>
+                    <div class="option-group">
+                        <button type="button" class="option-btn" data-value="asthma_history">Asthma History</button>
+                        <button type="button" class="option-btn" data-value="high_cholesterol">High Cholesterol</button>
+                        <button type="button" class="option-btn" data-value="diabetes">Diabetes</button>
+                        <button type="button" class="option-btn" data-value="obesity">Obesity</button>
+                        <button type="button" class="option-btn" data-value="hiv_aids">HIV/AIDS</button>
+                        <button type="button" class="option-btn" data-value="nasal_polyps">Nasal Polyps</button>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Analyze Symptoms</button>
+        </form>
+        
+        <div class="results" id="results">
+            <h2>Analysis Results</h2>
+            <div id="resultsContent"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <br>
+    <marquee>Copyright @ BBAU, Lucknow, All rights reserved.</marquee>
+</body>
+</html>
